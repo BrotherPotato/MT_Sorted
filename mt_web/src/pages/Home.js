@@ -35,7 +35,6 @@ function Home(){
         const lowerCaseExaminator = KursObj.Examinator.toLowerCase()
         const lowerCaseÅr = KursObj.År.toLowerCase()
         const lowerCasePeriod = KursObj.Period.toLowerCase()
-        const lowerCaseStudentGrupp = KursObj.Studentgrupp.toLowerCase()
         const lowerCaseKlar = KursObj.Klar.toLowerCase()
 
         const lowerCaseSearch = searchString.toLowerCase()
@@ -44,7 +43,6 @@ function Home(){
         (lowerCaseExaminator.indexOf(lowerCaseSearch) >= 0) || 
         (lowerCaseÅr.indexOf(lowerCaseSearch) >= 0) ||
         (lowerCasePeriod.indexOf(lowerCaseSearch) >= 0) ||
-        (lowerCaseStudentGrupp.indexOf(lowerCaseSearch) >= 0) ||
         (lowerCaseKlar.indexOf(lowerCaseSearch) >= 0)
 
     }
@@ -67,16 +65,8 @@ function Home(){
         return (KursObj.Studentgrupp.indexOf(searchTerm) >= 0)
     }
 
-    const matchDropdownYear = KursObj => {
-        if(dropdownYear === 'Alla'){
-            return 1
-        }
-        return (KursObj.Studentgrupp.indexOf(dropdownYear) >= 0)
-    }
-
     const filteredKursDataDropdown = filteredKursData.filter(matchDropdown)
     //const filteredKursDataYear = filteredKursDataProg.filter(matchDropdownYear)
-
 
     const uppdateDropdownProg = (e) => {
         setDropdownprog(e.target.value)
