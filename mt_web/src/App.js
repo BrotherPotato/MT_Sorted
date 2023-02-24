@@ -1,16 +1,15 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit  and save to reload.
-        </p>
-
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route index element={<Home />} />
+          
+         
+      </Routes>
+    </BrowserRouter>
   );
 }
 
