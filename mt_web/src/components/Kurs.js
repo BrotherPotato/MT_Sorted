@@ -9,7 +9,7 @@ const Kurs = ({kursObj}) =>{
             <p>{kursObj.År} {kursObj.Period}</p>
             <p>{kursObj.Studentgrupp}</p>
             {kursObj.Klar != "Y" &&
-                <h2>Ej avklarad</h2>
+                <p>Ej avklarad</p>
             }
             {kursObj.GitHub != "" &&
              <Link to={kursObj.GitHub}>GitHub<br/></Link>
