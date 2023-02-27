@@ -6,6 +6,8 @@ import Kurs from '../components/Kurs.js'
 
 function Home(){
     const [searchString, setSearchString] = useState('')
+    const [checGithub, setChecGithub] = useState(false)
+    const [checGithubProj, setChecGithubProj] = useState(false)
     const [dropdownProg, setDropdownprog] = useState('Alla')
     const [dropdownYear, setDropdownYear] = useState('Alla')
     //console.log(KursData)
@@ -64,9 +66,30 @@ function Home(){
         }
         return (KursObj.Studentgrupp.indexOf(searchTerm) >= 0)
     }
-
+    /* FIXA CHECKBOX
+    const matchCheckbox = KursObj => {
+        if(checGithub === true && checGithubProj === true){
+            return ((KursObj.GitHub.split(", ")[0] != "") && (KursObj.GitHub.split(", ")[1] != ""))
+        } else if(checGithub === true){
+            return (KursObj.GitHub.split(", ").length == 1)
+        } else if(checGithubProj === true){
+            return (KursObj.GitHub.split(", ").length == 2)
+        } else {
+            return 1
+        }
+    }
+    */
+    const filteredKursDataCheckbox = filteredKursData.filter(matchCheckbox)
     const filteredKursDataDropdown = filteredKursData.filter(matchDropdown)
     //const filteredKursDataYear = filteredKursDataProg.filter(matchDropdownYear)
+
+    const uppdateChecGithub = (e) => {
+        setChecGithub(e.target.value)
+    }
+
+    const uppdateChecGithubProj = (e) => {
+        setChecGithubProj(e.target.value)
+    }
 
     const uppdateDropdownProg = (e) => {
         setDropdownprog(e.target.value)
@@ -86,6 +109,12 @@ function Home(){
                     placeholder='Sök'
                     onInput={inputSearchString}
                 />
+                <input type="checkbox" id="Github" name="github" value="Github" onInput={uppdateChecGithub}/>
+                <label for="github"> Github</label>
+
+                <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" onInput={uppdateChecGithubProj}/>
+                <label for="githubProj"> Github Project</label>
+
                 <input type='dropdown' label='Filtrera kurser: ' placeholder='Filtrera'/>
                 <select name="GruppDropdown" id="Grupp" placeholder='Filtrera' onInput={uppdateDropdownProg}>
                     <option value="Alla">Alla</option>

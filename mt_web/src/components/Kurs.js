@@ -12,7 +12,11 @@ const Kurs = ({kursObj}) =>{
                 <p>Ej avklarad</p>
             }
             {kursObj.GitHub != "" &&
-             <Link to={kursObj.GitHub}>GitHub<br/></Link>
+             <Link to={kursObj.GitHub.split(", ")[0]}>GitHub<br/></Link>
+            }
+            {kursObj.GitHub.split(", ").length == 2 &&
+             <Link to={kursObj.GitHub.split(", ")[1]}>GitHub Project<br/></Link>
+
             }
             <Link to={kursObj.StudieInfo}>StudieInfo<br/></Link>
             {kursObj.Tenta != "" &&
