@@ -21,6 +21,8 @@ const Kurs = ({kursObj}) =>{
             <Link to={kursObj.StudieInfo}>StudieInfo<br/></Link>
             {kursObj.Tenta != "" &&
              <Link to={kursObj.Tenta}>Tenta<br/></Link>}
+            {kursObj.LitteraturInfo != "" &&
+            <p>Litteratur Info: {kursObj.LitteraturInfo}</p>}
         </div>
     )
 }

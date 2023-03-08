@@ -9,7 +9,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA001/ht-2021",
-        "Tenta": "https://drive.google.com/file/d/12OtmnXrcgT_qDqCg0SRicObW2rGnahTU/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/12OtmnXrcgT_qDqCg0SRicObW2rGnahTU/view?usp=sharing",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TND012",
@@ -21,7 +22,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TND012_Labs",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TND012/ht-2021",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Inte så värt, använd google"
     },
     {
         "Kurs": "TNM088",
@@ -33,7 +35,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM088/ht-2021",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNA002",
@@ -45,7 +48,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA002/ht-2021",
-        "Tenta": "https://drive.google.com/file/d/1FzMxGMT27Q8gdaLUQ-mvvF4yna6ApRpn5/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1FzMxGMT27Q8gdaLUQ-mvvF4yna6ApRpn5/view?usp=sharing",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNMK30",
@@ -57,7 +61,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TNMK30-Labs, https://github.com/BrotherPotato/TNMK30-Proj",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNMK30/ht-2021",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Använd google"
     },
     {
         "Kurs": "TNA003",
@@ -69,7 +74,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA003/vt-2022",
-        "Tenta": "https://drive.google.com/file/d/1PfXLGfwf6GQc3drx8qxCBbIZZo3qctOK/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1PfXLGfwf6GQc3drx8qxCBbIZZo3qctOK/view?usp=sharing",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNA005",
@@ -81,7 +87,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TNA005---MATLAB",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA005/vt-2022",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Boken kan användas under KS och för övningar, kan användas i senare kurser men google funkerar också"
     },
     {
         "Kurs": "TND002",
@@ -93,7 +100,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TND002---java",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TND002/vt-2022",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNA004",
@@ -105,7 +113,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA004/vt-2022",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNM046",
@@ -117,7 +126,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TNM046",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM046/vt-2022",
-        "Tenta": "https://drive.google.com/file/d/1_PoAhSz84aNXJEsS5dAfmfbHWn1Grgxs/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1_PoAhSz84aNXJEsS5dAfmfbHWn1Grgxs/view?usp=sharing",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNA006",
@@ -129,7 +139,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA006/ht-2022",
-        "Tenta": "https://drive.google.com/file/d/1_ovfLyFyS2tZCYms5cbbst5DGesR_lB5/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1_ovfLyFyS2tZCYms5cbbst5DGesR_lB5/view?usp=sharing",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNE043",
@@ -141,7 +152,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNE043/ht-2022",
-        "Tenta": "https://drive.google.com/file/d/1JdtxqgQyvDxoZzWxdFiBuATnU2ZN7Z8y/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1JdtxqgQyvDxoZzWxdFiBuATnU2ZN7Z8y/view?usp=sharing",
+        "LitteraturInfo": "Hitta online pdf istället, boken är ganska stor"
     },
     {
         "Kurs": "TNM040",
@@ -153,7 +165,8 @@
         "Klar": "Y",
         "GitHub": "https://github.com/BrotherPotato/TNM040, ",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM040/ht-2022",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNA007",
@@ -165,7 +178,8 @@
         "Klar": "Y",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNA007/ht-2022",
-        "Tenta": "https://drive.google.com/file/d/1JdtxqgQyvDxoZzWxdFiBuATnU2ZN7Z8y/view?usp=sharing"
+        "Tenta": "https://drive.google.com/file/d/1JdtxqgQyvDxoZzWxdFiBuATnU2ZN7Z8y/view?usp=sharing",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNG033",
@@ -177,7 +191,8 @@
         "Klar": "N",
         "GitHub": "https://github.com/BrotherPotato/TNG033-Labs",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG033/ht-2022",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Inte så värt, använd google"
     },
     {
         "Kurs": "TNG032",
@@ -189,7 +204,8 @@
         "Klar": "N",
         "GitHub": "https://github.com/BrotherPotato/TNG032_Labs",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG032/vt-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": "Mattekurs, litteratur är användbar"
     },
     {
         "Kurs": "TNM059",
@@ -201,7 +217,8 @@
         "Klar": "N",
         "GitHub": "https://github.com/BrotherPotato/TNM059_Labs",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM059/vt-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNM061",
@@ -213,7 +230,8 @@
         "Klar": "N",
         "GitHub": "https://github.com/BrotherPotato/TNM061_Labs, https://github.com/BrotherPotato/TNM040_Proj",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM061/vt-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNG006",
@@ -225,7 +243,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG006/vt-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNG015",
@@ -237,7 +256,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG015/vt-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TFYA65",
@@ -249,7 +269,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TFYA65/ht-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNG028",
@@ -261,7 +282,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG028/ht-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNM093",
@@ -273,7 +295,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM093/ht-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNG022",
@@ -285,7 +308,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNG022/ht-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNM087",
@@ -297,7 +321,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM087/ht-2023",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNM085",
@@ -309,7 +334,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM085/vt-2024",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TNM094",
@@ -321,7 +347,8 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TNM094/vt-2024",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     },
     {
         "Kurs": "TND004",
@@ -333,6 +360,7 @@
         "Klar": "N",
         "GitHub": "",
         "StudieInfo": "https://studieinfo.liu.se/kurs/TND004/vt-2024",
-        "Tenta": ""
+        "Tenta": "",
+        "LitteraturInfo": ""
     }
 ]
