@@ -120,6 +120,7 @@ function Home(){
     }
     //console.log(checGithub)
     //console.log(checGithubProj)
+    console.log(filteredKursDataDropdown)
     return(
         <div className='parent'>
             <div className='SearchBar' style={{display:'flex', paddingTop: '1em', justifyContent: 'space-evenly'}}>
@@ -140,25 +141,32 @@ function Home(){
                     <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" defaultChecked={checGithubProj} onChange={uppdateChecGithubProj}/>
                 </div>
 
-                <input type='dropdown' label='Filtrera kurser: ' placeholder='Filtrera'/>
-                <select name="GruppDropdown" id="Grupp" placeholder='Filtrera' onInput={uppdateDropdownProg}>
-                    <option value="Alla">Alla</option>
-                    <option value="MT">MT</option>
-                    <option value="ED">ED</option>
-                    <option value="KTS">KTS</option>
-                </select>
-                <select name="YearDropdown" id="Year" placeholder='Filtrera' onInput={uppdateDropdownYear}>
-                    <option value="Alla">Alla</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+                <div style={{display: "flex", flexDirection: "row"}}>
+                    <p style={{margin: "0px"}}>Ange Studentgrupp: </p>
+                    <select name="GruppDropdown" id="Grupp" placeholder='Filtrera' onInput={uppdateDropdownProg} style={{margin: "0px 1em"}}>
+                        <option value="Alla">Alla</option>
+                        <option value="MT">MT</option>
+                        <option value="ED">ED</option>
+                        <option value="KTS">KTS</option>
+                    </select>
+                    <select name="YearDropdown" id="Year" placeholder='Filtrera' onInput={uppdateDropdownYear}>
+                        <option value="Alla">Alla</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                
             </div>
             <div className='InfoBox' style={{display:'flex', paddingTop: '1em', justifyContent: 'space-evenly', flexDirection: "column"}}>
-                <p style={{paddingLeft: "1em"}}> {procentKurs()} % av alla MT kurser (icke valfria) är avklarade</p>
+                {//<p style={{paddingLeft: "1em"}}> {procentKurs()} % av alla MT kurser (icke valfria) är avklarade</p>
+                }
+                
                 {filteredKursDataDropdown.map((KursObj) => (
                  <Kurs kursObj={KursObj} key={KursObj.Kurs}></Kurs>
                 ))}
+                
+                {filteredKursDataDropdown.length == 0 && <p>Inga kurser med dessa krav hittades :(</p>}
             </div>
             {(!infoOpenerSeen) &&
                 <div id="greyBox" style={{display: "block", position: "absolute", width: "100vw", height: "1000vh", backgroundColor: "grey", opacity: "0.5", top: "0px"}}></div>
