@@ -10,6 +10,7 @@ function Home(){
     const [checGithubProj, setChecGithubProj] = useState(false)
     const [dropdownProg, setDropdownprog] = useState('Alla')
     const [dropdownYear, setDropdownYear] = useState('Alla')
+    const [infoOpenerSeen, setInfoOpenerSeen] = useState(false)
 
     function getKurs(kursKod){
         kursKod = kursKod.toUpperCase()
@@ -113,6 +114,10 @@ function Home(){
     const uppdateDropdownYear = (e) => {
         setDropdownYear(e.target.value)
     }
+
+    const closePopup = (e) => {
+        setInfoOpenerSeen(true)
+    }
     //console.log(checGithub)
     //console.log(checGithubProj)
     return(
@@ -126,12 +131,14 @@ function Home(){
                     placeholder='Sök'
                     onInput={inputSearchString}
                 />
-
-                <input type="checkbox" id="Github" name="github" value="Github" defaultChecked={checGithub} onChange={uppdateChecGithub}/>
-                <label for="github"> Github</label>
-
-                <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" defaultChecked={checGithubProj} onChange={uppdateChecGithubProj}/>
-                <label for="githubProj"> Github Project</label>
+                <div>
+                    <label for="github"> Github</label>
+                    <input type="checkbox" id="Github" name="github" value="Github" defaultChecked={checGithub} onChange={uppdateChecGithub}/>
+                </div>
+                <div>
+                    <label for="githubProj"> Github Project</label>
+                    <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" defaultChecked={checGithubProj} onChange={uppdateChecGithubProj}/>
+                </div>
 
                 <input type='dropdown' label='Filtrera kurser: ' placeholder='Filtrera'/>
                 <select name="GruppDropdown" id="Grupp" placeholder='Filtrera' onInput={uppdateDropdownProg}>
@@ -153,7 +160,20 @@ function Home(){
                  <Kurs kursObj={KursObj} key={KursObj.Kurs}></Kurs>
                 ))}
             </div>
-           
+            {(!infoOpenerSeen) &&
+                <div id="greyBox" style={{display: "block", position: "absolute", width: "100vw", height: "1000vh", backgroundColor: "grey", opacity: "0.5", top: "0px"}}></div>
+            }
+            {(!infoOpenerSeen) &&
+                <div id="popupBox" style={{display: "block", position: "absolute", width: "50vw", height: "50vh", backgroundColor: "#BEB4D6", top: "25vh", left: "25vw", borderRadius: "20px",
+                                            padding: "1em"}}>
+                    <h1>Hej! 🐱‍🐉</h1>
+                    <p>Här är en liten sida med info om några MT kurser som jag har gått :)</p>
+                    <p>Det finns ett söksystem samt lite alternativ för Github, projekt samt oliks studentgrupper</p>
+                    <div style={{display: "flex", justifyContent: "center"}}>
+                    <button onClick={closePopup} style={{backgroundColor: "#CC97C1", borderRadius: "20px", padding: "1em 2em"}}>Stäng</button>
+                    </div>
+                </div>
+            }
         </div>
     )
 }

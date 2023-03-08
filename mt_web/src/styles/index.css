@@ -12,6 +12,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--blue);
+  overflow-x: hidden;
 }
 
+.indvKurs:nth-child(even){
+  background-color: var(--lavender); 
+}
+.indvKurs:nth-child(odd){
+  background-color: var(--pink); 
+}
 
