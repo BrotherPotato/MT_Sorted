@@ -6,12 +6,11 @@ import Kurs from '../components/Kurs.js'
 
 function Home(){
     const [searchString, setSearchString] = useState('')
-    const [checGithub, setChecGithub] = useState(true)
-    const [checGithubProj, setChecGithubProj] = useState(true)
+    const [checGithub, setChecGithub] = useState(false)
+    const [checGithubProj, setChecGithubProj] = useState(false)
     const [dropdownProg, setDropdownprog] = useState('Alla')
     const [dropdownYear, setDropdownYear] = useState('Alla')
-    //console.log(KursData)
-    //let string = "TNd002"
+
     function getKurs(kursKod){
         kursKod = kursKod.toUpperCase()
         return KursData.find(kurs => kurs.Kurs === kursKod)
@@ -29,8 +28,7 @@ function Home(){
         return countCleared/count*100
     }
 
-    
-    
+    // we seatch for the string in KursData
     const matchSearch = KursObj => {
         const lowerCaseKod = KursObj.Kurs.toLowerCase()
         const lowerCaseName = KursObj.KursNamn.toLowerCase()
@@ -49,15 +47,12 @@ function Home(){
 
     }
 
-
     const filteredKursData = KursData.filter(matchSearch)
     const inputSearchString = (e) => {
         setSearchString(e.target.value)
     }
 
-
     const matchDropdown = KursObj => {
-        
         let searchTerm = ''
         if(dropdownYear != 'Alla' && dropdownProg != 'Alla'){
             searchTerm = dropdownProg + dropdownYear
@@ -73,9 +68,7 @@ function Home(){
 
     const matchGitHubCheckbox = KursObj => {
         const GitHubExist = (KursObj.GitHub != "")
-        //console.log(checGithub)
         if(checGithub){
-            console.log(GitHubExist)
             return GitHubExist
         } else {
             return 1
@@ -91,13 +84,13 @@ function Home(){
         }
     }
     
+    // filter everything
     const filteredKursDataCheckboxGithub = filteredKursData.filter(matchGitHubCheckbox)
     const filteredKursDataCheckboxGithubProj = filteredKursDataCheckboxGithub.filter(matchGitHubProjCheckbox)
     const filteredKursDataDropdown = filteredKursDataCheckboxGithubProj.filter(matchDropdown)
-    //const filteredKursDataYear = filteredKursDataProg.filter(matchDropdownYear)
 
+    // we flip the state
     const uppdateChecGithub = (e) => {
-        //console.log(e.target.value)
         if(checGithub){
             setChecGithub(false)
         } else {
@@ -105,15 +98,13 @@ function Home(){
         }
         
     }
-
+    // we flip the state
     const uppdateChecGithubProj = (e) => {
-        //console.log(e.target.value)
         if(checGithubProj){
             setChecGithubProj(false)
         } else {
             setChecGithubProj(true)
         }
-        //console.log(checGithubProj)
     }
 
     const uppdateDropdownProg = (e) => {
@@ -122,8 +113,8 @@ function Home(){
     const uppdateDropdownYear = (e) => {
         setDropdownYear(e.target.value)
     }
-    console.log(checGithub)
-    console.log(checGithubProj)
+    //console.log(checGithub)
+    //console.log(checGithubProj)
     return(
         <div className='parent'>
             <div className='SearchBar' style={{display:'flex', paddingTop: '1em', borderTop: '3px solid #3DD2DC', justifyContent: 'space-evenly'}}>
