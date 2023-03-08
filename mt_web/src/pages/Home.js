@@ -117,7 +117,7 @@ function Home(){
     //console.log(checGithubProj)
     return(
         <div className='parent'>
-            <div className='SearchBar' style={{display:'flex', paddingTop: '1em', borderTop: '3px solid #3DD2DC', justifyContent: 'space-evenly'}}>
+            <div className='SearchBar' style={{display:'flex', paddingTop: '1em', justifyContent: 'space-evenly'}}>
                 <input
                     autoFocus
                     id='kursInput'
@@ -147,8 +147,8 @@ function Home(){
                     <option value="3">3</option>
                 </select>
             </div>
-            <div className='LogoTextBox'>
-                <p>AAAAAAA {procentKurs()} % av alla MT kurser (icke valfria) är avklarade</p>
+            <div className='InfoBox' style={{display:'flex', paddingTop: '1em', justifyContent: 'space-evenly', flexDirection: "column"}}>
+                <p style={{paddingLeft: "1em"}}> {procentKurs()} % av alla MT kurser (icke valfria) är avklarade</p>
                 {filteredKursDataDropdown.map((KursObj) => (
                  <Kurs kursObj={KursObj} key={KursObj.Kurs}></Kurs>
                 ))}

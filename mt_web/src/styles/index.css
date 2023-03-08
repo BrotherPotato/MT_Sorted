@@ -1,6 +1,17 @@
+:root{
+  --green: #CCE8DB;
+  --blue: #C1D4E3;
+  --lavender: #BEB4D6;
+  --palePink: #FADAE2;
+  --pink: #F8B3CA;
+  --darkPink: #CC97C1;
+
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--blue);
 }
 
 

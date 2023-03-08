@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Kurs = ({kursObj}) =>{
     return(
-        <div style={{borderBottom: '1px solid #39bde3'}}>
+        <div style={{borderTop: '1px solid #000000', paddingLeft: "2em"}}>
             <h2>{kursObj.Kurs} - {kursObj.KursNamn}</h2>
             <p>Examinator: {kursObj.Examinator}</p>
-            <p>{kursObj.År} {kursObj.Period}</p>
-            <p>{kursObj.Studentgrupp}</p>
+            <p>Period: {kursObj.År} {kursObj.Period}</p>
+            <p>Studentgrupper: {kursObj.Studentgrupp}</p>
             {kursObj.Klar != "Y" &&
                 <p>Ej avklarad</p>
             }
