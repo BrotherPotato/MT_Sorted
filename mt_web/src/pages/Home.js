@@ -6,8 +6,8 @@ import Kurs from '../components/Kurs.js'
 
 function Home(){
     const [searchString, setSearchString] = useState('')
-    const [checGithub, setChecGithub] = useState(false)
-    const [checGithubProj, setChecGithubProj] = useState(false)
+    const [checGithub, setChecGithub] = useState(true)
+    const [checGithubProj, setChecGithubProj] = useState(true)
     const [dropdownProg, setDropdownprog] = useState('Alla')
     const [dropdownYear, setDropdownYear] = useState('Alla')
     //console.log(KursData)
@@ -48,10 +48,14 @@ function Home(){
         (lowerCaseKlar.indexOf(lowerCaseSearch) >= 0)
 
     }
+
+
     const filteredKursData = KursData.filter(matchSearch)
     const inputSearchString = (e) => {
         setSearchString(e.target.value)
     }
+
+
     const matchDropdown = KursObj => {
         
         let searchTerm = ''
@@ -66,29 +70,50 @@ function Home(){
         }
         return (KursObj.Studentgrupp.indexOf(searchTerm) >= 0)
     }
-    /* FIXA CHECKBOX
-    const matchCheckbox = KursObj => {
-        if(checGithub === true && checGithubProj === true){
-            return ((KursObj.GitHub.split(", ")[0] != "") && (KursObj.GitHub.split(", ")[1] != ""))
-        } else if(checGithub === true){
-            return (KursObj.GitHub.split(", ").length == 1)
-        } else if(checGithubProj === true){
-            return (KursObj.GitHub.split(", ").length == 2)
+
+    const matchGitHubCheckbox = KursObj => {
+        const GitHubExist = (KursObj.GitHub != "")
+        //console.log(checGithub)
+        if(checGithub){
+            console.log(GitHubExist)
+            return GitHubExist
         } else {
             return 1
         }
     }
-    */
-    const filteredKursDataCheckbox = filteredKursData.filter(matchCheckbox)
-    const filteredKursDataDropdown = filteredKursData.filter(matchDropdown)
+
+    const matchGitHubProjCheckbox = KursObj => {    
+        const GitHubProjExist = (KursObj.GitHub.split(", ").length == 2)
+        if(checGithubProj){
+            return GitHubProjExist
+        } else {
+            return 1
+        }
+    }
+    
+    const filteredKursDataCheckboxGithub = filteredKursData.filter(matchGitHubCheckbox)
+    const filteredKursDataCheckboxGithubProj = filteredKursDataCheckboxGithub.filter(matchGitHubProjCheckbox)
+    const filteredKursDataDropdown = filteredKursDataCheckboxGithubProj.filter(matchDropdown)
     //const filteredKursDataYear = filteredKursDataProg.filter(matchDropdownYear)
 
     const uppdateChecGithub = (e) => {
-        setChecGithub(e.target.value)
+        //console.log(e.target.value)
+        if(checGithub){
+            setChecGithub(false)
+        } else {
+            setChecGithub(true)
+        }
+        
     }
 
     const uppdateChecGithubProj = (e) => {
-        setChecGithubProj(e.target.value)
+        //console.log(e.target.value)
+        if(checGithubProj){
+            setChecGithubProj(false)
+        } else {
+            setChecGithubProj(true)
+        }
+        //console.log(checGithubProj)
     }
 
     const uppdateDropdownProg = (e) => {
@@ -97,7 +122,8 @@ function Home(){
     const uppdateDropdownYear = (e) => {
         setDropdownYear(e.target.value)
     }
-
+    console.log(checGithub)
+    console.log(checGithubProj)
     return(
         <div className='parent'>
             <div className='SearchBar' style={{display:'flex', paddingTop: '1em', borderTop: '3px solid #3DD2DC', justifyContent: 'space-evenly'}}>
@@ -109,10 +135,11 @@ function Home(){
                     placeholder='Sök'
                     onInput={inputSearchString}
                 />
-                <input type="checkbox" id="Github" name="github" value="Github" onInput={uppdateChecGithub}/>
+
+                <input type="checkbox" id="Github" name="github" value="Github" defaultChecked={checGithub} onChange={uppdateChecGithub}/>
                 <label for="github"> Github</label>
 
-                <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" onInput={uppdateChecGithubProj}/>
+                <input type="checkbox" id="Github Project" name="githubProj" value="GithubProj" defaultChecked={checGithubProj} onChange={uppdateChecGithubProj}/>
                 <label for="githubProj"> Github Project</label>
 
                 <input type='dropdown' label='Filtrera kurser: ' placeholder='Filtrera'/>
