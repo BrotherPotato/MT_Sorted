@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MT_Sorted/docs/static/css/main.4cb0d5ab.css",
-    "main.js": "/MT_Sorted/docs/static/js/main.d9092977.js",
-    "index.html": "/MT_Sorted/docs/index.html",
-    "main.4cb0d5ab.css.map": "/MT_Sorted/docs/static/css/main.4cb0d5ab.css.map",
-    "main.d9092977.js.map": "/MT_Sorted/docs/static/js/main.d9092977.js.map"
+    "main.css": "/MT_Sorted/static/css/main.4cb0d5ab.css",
+    "main.js": "/MT_Sorted/static/js/main.d9092977.js",
+    "index.html": "/MT_Sorted/index.html",
+    "main.4cb0d5ab.css.map": "/MT_Sorted/static/css/main.4cb0d5ab.css.map",
+    "main.d9092977.js.map": "/MT_Sorted/static/js/main.d9092977.js.map"
   },
   "entrypoints": [
     "static/css/main.4cb0d5ab.css",
