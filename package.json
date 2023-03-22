@@ -5,6 +5,10 @@
   "homepage": "https://brotherpotato.github.io/MT_Sorted/",
   "description": "MT_Sorted",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://philiprobertsson.github.io/Mette-Test/docs"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
